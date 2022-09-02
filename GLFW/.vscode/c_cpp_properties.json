@@ -1,0 +1,47 @@
+{
+  "configurations": [
+  {
+    "name": "GLFW Debug",
+    "includePath": [
+      "${workspaceFolder}/**"
+    ],
+    "defines": [
+      "_GLFW_X11"
+    ],
+    "compilerPath": "/usr/bin/g++",
+    "intelliSenseMode": "gcc-x64",
+    "compilerArgs": [
+      ""
+    ]
+  }
+  ,{
+    "name": "GLFW Release",
+    "includePath": [
+      "${workspaceFolder}/**"
+    ],
+    "defines": [
+      "_GLFW_X11"
+    ],
+    "compilerPath": "/usr/bin/g++",
+    "intelliSenseMode": "gcc-x64",
+    "compilerArgs": [
+      ""
+    ]
+  }
+  ,{
+    "name": "GLFW Dist",
+    "includePath": [
+      "${workspaceFolder}/**"
+    ],
+    "defines": [
+      "_GLFW_X11"
+    ],
+    "compilerPath": "/usr/bin/g++",
+    "intelliSenseMode": "gcc-x64",
+    "compilerArgs": [
+      ""
+    ]
+  }
+  ],
+  "version": 4
+}

@@ -1,0 +1,83 @@
+﻿{
+  "version": "0.2.0",
+  "configurations": [
+  {
+    "name": "GLFW: Build and debug",
+    "type": "cppdbg",
+    "request": "launch",
+    "program": "/home/ben/Projects/CraneEngine/Crane/vendor/GLFW/bin/Debug-linux-x86_64/GLFW/GLFW",
+    "args": [],
+    "stopAtEntry": false,
+    "cwd": "${workspaceFolder}/../",
+    "environment": [],
+    "externalConsole": false,
+    "MIMode": "gdb",
+    "setupCommands": [
+      {
+      "description": "Enable pretty-printing for gdb",
+      "text": "-enable-pretty-printing",
+      "ignoreFailures": true
+      },
+      {
+      "description": "Enable break on all-exceptions",
+      "text": "catch throw",
+      "ignoreFailures": true
+      }
+    ],
+    "preLaunchTask": "C/C++: build",
+    "miDebuggerPath": "/usr/bin/gdb"
+  }
+  ,{
+    "name": "GLFW: Build and debug",
+    "type": "cppdbg",
+    "request": "launch",
+    "program": "/home/ben/Projects/CraneEngine/Crane/vendor/GLFW/bin/Release-linux-x86_64/GLFW/GLFW",
+    "args": [],
+    "stopAtEntry": false,
+    "cwd": "${workspaceFolder}/../",
+    "environment": [],
+    "externalConsole": false,
+    "MIMode": "gdb",
+    "setupCommands": [
+      {
+      "description": "Enable pretty-printing for gdb",
+      "text": "-enable-pretty-printing",
+      "ignoreFailures": true
+      },
+      {
+      "description": "Enable break on all-exceptions",
+      "text": "catch throw",
+      "ignoreFailures": true
+      }
+    ],
+    "preLaunchTask": "C/C++: build",
+    "miDebuggerPath": "/usr/bin/gdb"
+  }
+  ,{
+    "name": "GLFW: Build and debug",
+    "type": "cppdbg",
+    "request": "launch",
+    "program": "/home/ben/Projects/CraneEngine/Crane/vendor/GLFW/bin/Dist-linux-x86_64/GLFW/GLFW",
+    "args": [],
+    "stopAtEntry": false,
+    "cwd": "${workspaceFolder}/../",
+    "environment": [],
+    "externalConsole": false,
+    "MIMode": "gdb",
+    "setupCommands": [
+      {
+      "description": "Enable pretty-printing for gdb",
+      "text": "-enable-pretty-printing",
+      "ignoreFailures": true
+      },
+      {
+      "description": "Enable break on all-exceptions",
+      "text": "catch throw",
+      "ignoreFailures": true
+      }
+    ],
+    "preLaunchTask": "C/C++: build",
+    "miDebuggerPath": "/usr/bin/gdb"
+  }
+  ]
+}
