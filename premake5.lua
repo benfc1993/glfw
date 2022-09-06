@@ -1,6 +1,8 @@
 project "GLFW"
 	kind "StaticLib"
 	language "C"
+	staticruntime "on"
+
 
 	targetdir ("bin/" .. outputdir .. "/%{prj.name}")
 	objdir ("bin-int/" .. outputdir .. "/%{prj.name}")
@@ -17,11 +19,14 @@ project "GLFW"
 		"src/vulkan.c",
 		"src/window.c"
 	}
-	filter "system:linux"
-		pic "On"
 
+	defines
+	{
+		"_CRT_SECURE_NO_WARNINGS"
+	}
+	filter "system:linux"
+		pic "on"
 		systemversion "latest"
-		staticruntime "On"
 
 		files
 		{
@@ -44,7 +49,6 @@ project "GLFW"
 
 	filter "system:windows"
 		systemversion "latest"
-		staticruntime "On"
 
 		files
 		{
@@ -62,7 +66,6 @@ project "GLFW"
 		defines 
 		{ 
 			"_GLFW_WIN32",
-			"_CRT_SECURE_NO_WARNINGS"
 		}
 
 	filter "configurations:Debug"
